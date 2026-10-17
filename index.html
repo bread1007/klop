@@ -1,1 +1,104 @@
-klop
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитная карточка</title>
+    <style>
+        
+        body {
+            background-color: #eef2f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        
+        
+        .card {
+            background: #ffffff;
+            width: 400px;
+            height: 220px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: flex;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #212121;
+            margin: 0 0 5px 0;
+        }
+
+        .job {
+            font-size: 14px;
+            font-style: italic;
+            color: #666;
+            margin: 0 0 15px 0;
+        }
+
+        
+        .line {
+            width: 85%;
+            height: 2px;
+            background-color: #eaeaea;
+            margin-bottom: 15px;
+        }
+
+        .contacts {
+            font-size: 13px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        
+        .contacts a {
+            color: #4169e1;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contacts a:hover {
+            text-decoration: underline;
+        }
+
+        
+        .photo-placeholder {
+            width: 100px;
+            height: 100px;
+            background-color: #2f4f4f;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        
+        <div class="info">
+            <h1 class="name">Виталий Манзуров</h1>
+            <p class="job">Lead Web Developer</p>
+            <div class="line"></div>
+            <div class="contacts">
+                <div> Тел: +7 (982) ***-**-**</div>
+                <div> Email: ivan@dev.com</div>
+                <div> Сайт: <a href="https://github.com" target="_blank">://github.com</a></div>
+            </div>
+        </div>
+        
+        
+        <div class="photo-placeholder"></div>
+    </div>
+
+</body>
+</html>
